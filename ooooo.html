@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 頭的開始 ctrl+/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧飛盤 - Neural Interface Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="templatemo-neural-style.css" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="templatemo-electric-xtra.css" rel="stylesheet"> -->
+    <!--
+
+TemplateMo 597 Neural Glass
+
+https://templatemo.com/tm-597-neural-glass
+
+-->
+
+    <!-- 標題智慧飛盤的網址 -->
+    <style>
+        .hero {
+            background-image: url("images/frisbee1.png");
+            background-size: 970px;
+            height: 90vh;
+        }
+
+        .bigtit {
+            color: #e0a3ff;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<!-- 頭的結束 -->
+
+
+
+
+
+<!-- 主體的開始 -->
+
+<body>
+    <!-- Epic Neural Background -->
+    <div class="neural-background"></div>
+
+    <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass">
+
+        <!-- 導覽列的開始 -->
+        <nav>
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#485177" />
+                            <stop offset="50%" style="stop-color:#ffffff" />
+                            <stop offset="100%" style="stop-color:#9370db" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="30" r="8" fill="url(#logoGradient)" opacity="0.8">
+                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="30" cy="60" r="6" fill="url(#logoGradient)" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="70" cy="65" r="7" fill="url(#logoGradient)" opacity="0.7">
+                        <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite" />
+                    </circle>
+                    <line x1="50" y1="30" x2="30" y2="60" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" />
+                    </line>
+                    <line x1="50" y1="30" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" />
+                    </line>
+                    <line x1="30" y1="60" x2="70" y2="65" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6">
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite" />
+                    </line>
+                </svg>
+                <a href="https://www.youtube.com/watch?v=iyaZUbpWi0U" class="bigtit"><span>智慧飛盤</span></a>
+                <!-- 智慧飛盤 -->
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">永續發展目標</a></li>
+                <li><a href="#fsh">起源與發展</a></li>
+                <li><a href="#yyyyy">飛盤種類</a></li>
+                <!-- <li><a href="#timeline">研究過程</a></li> -->
+                <li><a href="#pyh">成員介紹</a></li>
+                <li><a href="#showcase">分工與合作</a></li>
+                <li><a href="#contact">聯絡資訊</a></li>
+                <!-- 英文架構圖 -->
+                <li><button onclick="document.getElementById('A').style.display='block'">英</button></li>
+                <div id="A"
+                    style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#0008;z-index:999;">
+                    <div style="background:#fff;padding:20px;margin:15% auto;width:70%;text-align:center;">
+                        <img src="images/lable3.png" style="width: 100%;height: 100%;"></img>
+                        <button onclick="document.getElementById('A').style.display='none'">X</button>
+                    </div>
+                </div>
+                <!-- 日文架構圖 -->
+                <li><button onclick="document.getElementById('B').style.display='block'">日</button></li>
+                <div id="B"
+                    style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#0008;z-index:999;">
+                    <div style="background:#fff;padding:20px;margin:15% auto;width:70%;text-align:center;">
+                        <img src="images/lable2.png" style="width: 100%;height: 100%;"></img>
+                        <button onclick="document.getElementById('B').style.display='none'">X</button>
+                    </div>
+                </div>
+                <li><button onclick="document.getElementById('C').style.display='block'">台日交流</button></li>
+                <div id="C"
+                    style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#0008;z-index:999;">
+                    <div style="background:#fff;padding:20px;margin:15% auto;width:70%;text-align:center;">
+                        <img src="images/japan.png" style="width: 100%;height: 100%;"></img>
+                        <button onclick="document.getElementById('C').style.display='none'">X</button>
+                    </div>
+                </div>
+            </ul>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+
+
+            <!-- 導覽列的結束 -->
+        </nav>
+        <div class="mobile-nav">
+            <a href="#features">永續發展目標</a>
+            <a href="#fsh">起源與發展</a>
+            <a href="#yyyyy">飛盤種類介紹</a>
+            <!-- <a href="#timeline">研究過程</a> -->
+            <a href="#pyh">成員介紹</a>
+            <a href="#showcase">分工與合作</a>
+            <a href="#contact">聯絡資訊</a>
+            <!-- 英文架構圖 -->
+            <!-- <li><button onclick="document.getElementById('A').style.display='block'">英</button></li>
+            <div id="A"
+                style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#0008;z-index:999;">
+                <div style="background:#fff;padding:20px;margin:15% auto;width:70%;text-align:center;">
+                    <img src="images/lable3.png" style="width: 50%;height: 50%;"></img>
+                    <button onclick="document.getElementById('A').style.display='none'">X</button>
+                </div>
+            </div> -->
+            <!-- 日文架構圖 -->
+            <!-- <li><button onclick="document.getElementById('B').style.display='block'">日</button></li>
+            <div id="B"
+                style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#0008;z-index:999;">
+                <div style="background:#fff;padding:20px;margin:15% auto;width:70%;text-align:center;">
+                    <img src="images/lable2.png" style="width: 100%;height: 100%;"></img>
+                    <button onclick="document.getElementById('B').style.display='none'">X</button>
+                </div>
+            </div> -->
+
+            <!-- <a href="https://example.com" target="_blank" class="external-link">創意設計</a> -->
+        </div>
+    </header>
+
+    <!-- 首頁 -->
+    <!-- Section 1: Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-subtitle">Welcome to the Future</div>
+            <h1>「飛」到未來-<br>智慧飛盤學習效率數據追蹤</h1>
+
+            <div class="hero-description">
+                <p>運用虛擬實境（VR）、人工智慧（AI），即時追蹤飛行軌跡、速度、旋轉等數據，利用物聯網將數據同步至應用程式，讓使用者透過應用程式，來提升訓練的效果。</p>
+            </div>
+
+            <div class="hero-stats">
+
+                <a href="https://www.youtube.com/watch?v=28R3MFwmyI8">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">飛盤<br>高爾夫</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=vXylBUZdzRA">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">飛盤<br>爭奪賽</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=bCrR6hiEV1A">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">回收<br>計時賽</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=rkk_O_9Sb8U">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">飛盤<br>擲準賽</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="http://127.0.0.1:5501/video/successful.html" class="cta-button">飛盤測速APP</a>
+                <a href="http://127.0.0.1:5501/app/frisbee.html" class="cta-button secondary">軌跡模擬APP</a>
+            </div>
+
+            <button id="frisbee-toggle" onclick="toggleSidebar()">
+                <span>留言板</span>
+                <i class="frisbee-icon">🥏</i>
+            </button>
+
+            <div id="comment-sidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <h2>玩家交流區</h2>
+                    <button class="close-btn" onclick="toggleSidebar()">✕</button>
+                </div>
+
+                <div class="message-display" id="message-list">
+                </div>
+
+                <div class="sidebar-footer">
+                    <input type="text" id="user-name" placeholder="輸入暱稱..." maxlength="10">
+                    <textarea id="user-text" placeholder="寫下你的心得..." rows="3"></textarea>
+                    <button class="submit-btn" onclick="postMessage()">發布留言</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 上排導覽列跳至哪開始 -->
+    <!-- Section 2: Features -->
+    <!-- SDG's -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2 class="section-title">SDG's</h2>
+            <div class="diagonal-grid">
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <img src="images/1.png" alt="">
+                        <h3>SDG's 4良好健康與福祉</h3>
+                        <p>數位化浪潮中的 VR/AI 應用已廣泛用於運動訓練和分析，可透過智慧飛盤的互動功能促進身體活動，幫助使用者達到更好的訓練效果和健康目標。</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <img src="images/2.png" alt="">
+                        <h3>SDG's 9產業、創新與基礎建設</h3>
+                        <p>設計互動式內容，屬於數位化浪潮下的創新應用，有助於提升運動產業的技術基礎。</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <img src="images/3.png" alt="">
+                        <h3>SDG's 12負責任的消費和生產</h3>
+                        <p>智慧飛盤的製作可使用耐用、易回收或再生塑膠作為飛盤材料（如 PP 材質），符合減少一次性塑膠使用和推動循環經濟的目標。</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SDG's結束 -->
+
+    <!-- Section 3: fsh -->
+    <!-- 起源與發展 -->
+    <section class="features" id="fsh">
+        <h2 class="section-title">起源與發展</h2>
+        <div class="features-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="performance">
+                    <!-- <span class="tab-icon">⚡</span> -->
+                    <!-- <span>Performance</span> -->
+                </div>
+                <div class="tab-item" data-tab="security">
+                    <!-- <span class="tab-icon">🔒</span>
+                    <span>Security</span> -->
+                </div>
+                <div class="tab-item" data-tab="network">
+                    <!-- <span class="tab-icon">🌐</span>
+                    <span>Network</span> -->
+                </div>
+                <div class="tab-item" data-tab="analytics">
+                    <!-- <span class="tab-icon">📊</span>
+                    <span>Analytics</span> -->
+                </div>
+                <div class="tab-item" data-tab="integration">
+                    <!-- <span class="tab-icon">🔧</span>
+                    <span>Integration</span> -->
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="content-panel active" id="performance">
+                    <h3>創意目的</h3>
+                    <p>主要目的是將科技應用於飛盤，提升不同體驗及價值的提升。</p>
+                    <ul class="feature-list">
+                        <li>探索「智慧飛盤」在運動領域的創新應用</li>
+                        <li>訓練「效率」增加</li>
+                        <li>打造全方位運動紀錄平台</li>
+                        <li>增加飛盤的曝光度</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="security">
+                    <h3>特色</h3>
+                    <p>平常丟飛盤時，都會無法精準的判斷角度及轉速，為此我們想製作一個利用數據來即時解決問題。</p>
+                    <ul class="feature-list">
+                        <li>傳統與科技的結合</li>
+                        <li>設計符合選手個別需求的訓練方案</li>
+                        <li>使用者互動體驗的提升</li>
+                        <!-- <li>Real-time threat detection</li> -->
+                        <!-- <li>Automated security updates</li> -->
+                    </ul>
+                </div>
+                <div class="content-panel" id="network">
+                    <h3>創意特質</h3>
+                    <p>本作品支援即開即用並採用兩步驟驗證，操作更安全。飛盤數據可即時上傳，方便後續管理與分析。</p>
+                    <ul class="feature-list">
+                        <li>在場即可進行智慧飛盤操作，簡化設定與啟動程序。</li>
+                        <li>採用兩步驟驗證設計，確保使用安全性。</li>
+                        <li>飛盤使用與練習數據即時上傳，管理與分析更高效率。</li>
+                        <!-- <li>5G and satellite connectivity</li> -->
+                        <!-- <li>Decentralized architecture</li> -->
+                    </ul>
+                </div>
+                <!-- <div class="content-panel" id="analytics">
+                    <h3>Advanced Analytics</h3>
+                    <p>Harness the power of AI-driven insights to make data-driven decisions. Real-time analytics and
+                        predictive modeling at your fingertips.</p>
+                    <ul class="feature-list">
+                        <li>Machine learning algorithms</li>
+                        <li>Predictive analytics</li>
+                        <li>Custom dashboard creation</li>
+                        <li>Real-time data visualization</li>
+                        <li>Automated reporting</li>
+                    </ul>
+                </div> -->
+                <div class="content-panel" id="integration">
+                    <h3>作品功能</h3>
+                    <p>本作品為可連接 App 的智慧飛盤，可即時記錄飛行數據並提供分析。使用者也能儲存與分享練習紀錄，提升訓練效率。</p>
+                    <ul class="feature-list">
+                        <li>開機與連接：將智慧飛盤開啟電源，透過手機或平板的專屬應用程式連接飛盤。</li>
+                        <li>選擇模式：在應用程式中選擇練習模式、比賽模式或自由模式。</li>
+                        <li>開始遊玩：按照螢幕提示進行拋接或特定動作，飛盤內建感測器會即時收集飛行速度、角度、距離等數據。</li>
+                        <li>數據回饋：完成飛盤操作後，應用程式會顯示成績、動作分析或改善建議，方便使用者檢視與調整技巧。</li>
+                        <li>數據管理與分享：使用者可以將練習紀錄儲存、比較歷史數據，甚至分享給其他玩家或教練。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 起源與發展結束 -->
+
+    <section class="timeline" id="yyyyy">
+        <h2 class="section-title">飛盤種類介紹</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">標準休閒飛盤</div>
+                    <h4>Standard/Catch Disc</h4>
+                    <p>邊緣較圓滑，飛行速度慢且穩定，適合初學者、休閒玩耍和傳接遊戲。</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">競技飛盤</div>
+                    <h4>Ultimate Disc</h4>
+                    <p>設計用於極限飛盤 (Ultimate Frisbee) 運動，要求良好的空氣動力學特性以進行長距離、精準的傳接。</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">高爾夫飛盤</div>
+                    <h4>Disc Golf Discs</h4>
+                    <p>1. 距離飛盤：最薄最銳利，飛行距離最遠。<br>2. 中程飛盤：平衡距離和控制，適合中距離拋投。<br>3.
+                        推桿飛盤：最鈍最穩定，用於短距離精準「推進」目標。</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">花式飛盤</div>
+                    <h4>Freestyle Disc</h4>
+                    <p>通常比競技飛盤輕一點，邊緣設計更厚或有特定握槽，專門用於旋轉、接盤、身體技巧等表演性動作。</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">狗用飛盤</div>
+                    <h4>Dog Disc</h4>
+                    <p>材質通常較軟且柔韌（例如橡膠或矽膠），耐咬且對狗的牙齒和嘴巴更安全，專為訓練和與寵物玩耍設計。</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">花式飛盤</div>
+                    <h4>Neural Singularity</h4>
+                    <p>Human consciousness successfully merges with AI systems, creating hybrid intelligences that
+                        transcend biological limitations.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Section 4: Timeline -->
+    <!-- 研究過程 -->
+    <!-- <section class="timeline" id="timeline">
+        <h2 class="section-title">研究過程</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2024</div>
+                    <h4>Genesis Protocol</h4>
+                    <p>NeuralGlass is a cutting-edge cyberpunk glassmorphism HTML template featuring a striking purple,
+                        pink, and green color palette with futuristic neural network aesthetics.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2025</div>
+                    <h4>Matrix Integration</h4>
+                    <p>Built with pure HTML/CSS and vanilla JavaScript, it offers smooth scrolling, mobile-responsive
+                        navigation with hamburger menu, parallax effects, and dynamic visual elements that respond to
+                        user interaction.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2026</div>
+                    <h4>Quantum Leap</h4>
+                    <p>This HTML CSS template is brought to you by TemplateMo website. Perfect for tech startups, AI
+                        companies, gaming platforms, or any project requiring a bold, futuristic web presence.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2027</div>
+                    <h4>Neural Singularity</h4>
+                    <p>Human consciousness successfully merges with AI systems, creating hybrid intelligences that
+                        transcend biological limitations.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- 研究過程結束 -->
+
+    <!-- Section 5: pyh -->
+    <!-- 人員介紹(完成) -->
+    <section class="timeline" id="pyh">
+        <h2 class="section-title">成員介紹</h2>
+        <a href="https://www.instagram.com/yuan_1124/">
+            <div class="hexagon-container">
+                <div class="hexagon">
+                    <div class="hexagon-inner glass">
+                        <div class="hexagon-icon">🔮</div>
+                        <h4>袁子珺</h4>
+                        <p></p>
+                    </div>
+        </a>
+        </div>
+        <a href="https://www.instagram.com/hsin_.6/">
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">⭐</div>
+                    <h4>彭于馨</h4>
+                    </li>
+                    <p></p>
+                </div>
+        </a>
+        </div>
+        <a href="https://www.instagram.com/minnie20090722/">
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon">💎</div>
+                    <h4>范先慧</h4>
+                    <p></p>
+                </div>
+        </a>
+        </div>
+        <div class="hexagon">
+            <div class="hexagon-inner glass">
+                <div class="hexagon-icon">🎯</div>
+                <h4>徐麗娟</h4>
+                <p></p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- 人員介紹結束 -->
+
+    <!-- Section 6: showcase -->
+    <!-- 分工合作(完成)  -->
+    <section class="showcase" id="showcase">
+        <h2 class="section-title">分工與合作</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">袁子珺</div>
+                    <h4></h4>
+                    <p>報告書製作、簡報製作、飛盤模型製作、網頁製作</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">彭于馨</div>
+                    <h4></h4>
+                    <p>內容修改、電子書製作、網頁製作</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">范先慧</div>
+                    <h4></h4>
+                    <p>簡報圖片查詢、簡報排版、網頁圖片查詢</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- 備用網格 -->
+            <!-- <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2027</div>
+                    <h4>Neural Singularity</h4>
+                    <p>Human consciousness successfully merges with AI systems, creating hybrid intelligences that
+                        transcend biological limitations.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div> -->
+        </div>
+    </section>
+    <!-- 分工合作結束 -->
+
+    <!-- Section 7: contact -->
+    <!-- 聯絡資訊 -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info glass">
+                <h3>聯絡資訊</h3>
+                <p></p>
+                <p></p>
+
+                <div class="social-links">
+                    <a href="#" class="glass">📡</a>
+                    <a href="#" class="glass">🌐</a>
+                    <a href="#" class="glass">💬</a>
+                    <a href="#" class="glass">📨</a>
+                </div>
+            </div>
+
+            <div class="contact-form glass">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Gmail" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Question..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
+            </div>
+        </div>
+    </section>
+    <!-- 聯絡資訊結束 -->
+
+    <!-- 上排導覽列跳至哪結束 -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#features">Neural Networks</a>
+                <a href="#showcase">Matrix Protocols</a>
+                <a href="#timeline">Evolution</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Documentation</a>
+                <!-- Add external links -->
+                <a href="https://github.com/yourproject" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 NeuralGlass Interface. All quantum rights reserved across dimensions.</p>
+            </div>
+            <div class="footer-design">
+                Design: <a href="https://templatemo.com" target="_blank" rel="nofollow noopener">TemplateMo</a> |
+                Enhanced by Neural AI Systems |
+                <a href="#">Quantum Framework</a>
+            </div>
+        </div>
+    </footer>
+    <script src="templatemo-neural-scripts.js"></script>
+    <script src="templatemo-electric-scripts.js"></script>
+
+    <script>
+        // 初始化留言陣列
+        let myMessages = [];
+
+        // 切換收縮功能
+        function toggleSidebar() {
+            const sidebar = document.getElementById('comment-sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+        // 發布留言功能
+        function postMessage() {
+            const nameInput = document.getElementById('user-name');
+            const textInput = document.getElementById('user-text');
+
+            const name = nameInput.value.trim();
+            const text = textInput.value.trim();
+
+            if (name === "" || text === "") {
+                alert("請填寫名字和留言內容喔！");
+                return;
+            }
+
+            // 建立留言物件並存入 Script 陣列
+            const newEntry = {
+                id: Date.now(),
+                user: name,
+                content: text,
+                time: new Date().toLocaleTimeString()
+            };
+
+            myMessages.push(newEntry);
+
+            // 呼叫更新畫面的 function
+            updateUI();
+
+            // 清空輸入框
+            nameInput.value = "";
+            textInput.value = "";
+        }
+
+        // 更新畫面的渲染
+        function updateUI() {
+            const list = document.getElementById('message-list');
+            list.innerHTML = ""; // 清空舊的
+
+            myMessages.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'msg-card';
+                card.innerHTML = `
+            <strong>👤 ${item.user} <small style="color:#aaa; float:right;">${item.time}</small></strong>
+            <p style="margin-top:10px; line-height:1.5;">${item.content}</p>
+        `;
+                // 將新留言插入到最前面
+                list.prepend(card);
+            });
+        }
+    </script>
+
+</body>
+<!-- 主體的結束 -->
+
+</html>
